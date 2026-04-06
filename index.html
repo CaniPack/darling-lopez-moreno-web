@@ -416,6 +416,19 @@
     </div>
   </footer>
 
+  <script type="text/javascript">
+    window.omnisend = window.omnisend || [];
+    omnisend.push(["brandID", "69d3d0903ff781a3a5fe5495"]);
+    omnisend.push(["track", "$pageViewed"]);
+    !(function () {
+      var e = document.createElement("script");
+      e.type = "text/javascript";
+      e.async = !0;
+      e.src = "https://omnisnippet1.com/inshop/launcher-v2.js";
+      var t = document.getElementsByTagName("script")[0];
+      t.parentNode.insertBefore(e, t);
+    })();
+  </script>
   <script>
     (function () {
       var toggle = document.getElementById("menu-toggle");
@@ -445,6 +458,52 @@
 
       document.addEventListener("keydown", function (e) {
         if (e.key === "Escape" && menu.classList.contains("open")) setOpen(false);
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      var form = document.querySelector('form[name="sesion-claridad"]');
+      if (!form) return;
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var fd = new FormData(form);
+        var email = (fd.get("email") || "").toString().trim();
+        var nombre = (fd.get("nombre") || "").toString().trim();
+        var mensaje = (fd.get("mensaje") || "").toString().trim();
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(fd).toString(),
+        })
+          .then(function (res) {
+            if (!res.ok) throw new Error("submit");
+            if (window.omnisend && email) {
+              omnisend.push([
+                "track",
+                "sesion claridad solicitud",
+                {
+                  origin: "api",
+                  eventVersion: "",
+                  properties: {
+                    mensaje: mensaje,
+                    form: "sesion-claridad",
+                  },
+                  contact: {
+                    email: email,
+                    firstName: nombre,
+                  },
+                },
+              ]);
+            }
+          })
+          .then(function () {
+            form.reset();
+            alert("¡Gracias! Te contactaremos pronto.");
+          })
+          .catch(function () {
+            alert("No se pudo enviar. Intenta de nuevo o escríbenos por email.");
+          });
       });
     })();
   </script>
