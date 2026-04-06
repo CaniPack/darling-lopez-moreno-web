@@ -117,13 +117,10 @@
 <body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden min-h-[100dvh]">
   <header class="fixed top-0 w-full z-50 bg-[#fffef9]/95 backdrop-blur-md border-b border-outline-variant/60 pt-[env(safe-area-inset-top)]">
     <nav class="relative flex items-center justify-between gap-3 px-4 sm:px-6 py-3 max-w-7xl mx-auto" aria-label="Principal">
-      <div class="relative z-10 flex min-w-0 items-center gap-2 sm:gap-3">
-        <a href="index.html" class="flex shrink-0 touch-manipulation items-center py-0.5" aria-label="Darling López Moreno — Inicio">
-          <img src="logo.jpeg" alt="Darling López Moreno — Coach" width="360" height="110" class="h-14 w-auto sm:h-16 md:h-20 md:max-h-[5.25rem] max-w-[min(300px,58vw)] md:max-w-[min(360px,40vw)] object-contain object-left" decoding="async" />
-        </a>
-        <img src="logo%20solo.png" alt="" width="120" height="120" decoding="async" role="presentation" class="hidden h-12 w-auto object-contain md:block lg:h-14 xl:h-16" />
-      </div>
-      <img src="logo%20solo.png" alt="" width="120" height="120" decoding="async" role="presentation" class="pointer-events-none absolute left-1/2 top-1/2 h-10 w-auto -translate-x-1/2 -translate-y-1/2 object-contain md:hidden" aria-hidden="true" />
+      <a href="index.html" class="relative z-10 flex min-w-0 max-w-[min(100%,calc(100%-5rem))] items-center gap-2 sm:gap-3 touch-manipulation py-0.5 md:max-w-[55%]" aria-label="Darling López Moreno — Inicio">
+        <img src="logo%20solo.png" alt="" width="120" height="120" decoding="async" class="h-11 w-auto shrink-0 object-contain sm:h-12 md:h-14 lg:h-16" />
+        <img src="logotexto.png" alt="Darling López Moreno — Coach" width="320" height="100" decoding="async" class="h-8 w-auto max-h-9 object-contain object-left sm:h-10 sm:max-h-11 md:h-11 md:max-h-12 lg:h-12 lg:max-h-14 max-w-[min(200px,42vw)] sm:max-w-[min(240px,38vw)] md:max-w-[min(280px,32vw)]" />
+      </a>
 
       <div class="relative z-10 hidden md:flex items-center gap-6 lg:gap-8 flex-wrap justify-end">
         <a class="text-xs font-label uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2" href="#problema">El Reto</a>
@@ -400,8 +397,9 @@
   <footer class="bg-on-surface text-surface py-10 sm:py-12 px-4 sm:px-6 pb-[calc(2.5rem+env(safe-area-inset-bottom))]">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
       <div class="text-center md:text-left">
-        <a href="index.html" class="inline-block mb-3 hover:opacity-90" aria-label="Darling López Moreno — Inicio">
-          <img src="logo.jpeg" alt="" width="280" height="90" class="h-14 sm:h-16 w-auto max-w-[260px] object-contain object-left mx-auto md:mx-0 brightness-0 invert opacity-95" decoding="async" />
+        <a href="index.html" class="mb-3 inline-flex flex-wrap items-center justify-center gap-2 hover:opacity-90 md:justify-start" aria-label="Darling López Moreno — Inicio">
+          <img src="logo%20solo.png" alt="" width="80" height="80" class="h-10 w-auto object-contain brightness-0 invert opacity-95 sm:h-11" decoding="async" />
+          <img src="logotexto.png" alt="" width="260" height="80" class="h-9 w-auto max-w-[220px] object-contain brightness-0 invert opacity-95 sm:h-10" decoding="async" />
         </a>
         <p class="text-surface/55 text-[10px] tracking-[0.2em] uppercase font-label">Vamos siendo, yo te acompaño</p>
       </div>
