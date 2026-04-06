@@ -57,7 +57,9 @@
   <!-- 0) Header fijo -->
   <header class="fixed top-0 z-50 w-full border-b border-line/90 bg-cream/95 backdrop-blur-md pt-[env(safe-area-inset-top)]">
     <div class="mx-auto flex max-w-content items-center justify-between gap-4 px-5 py-4 sm:px-8">
-      <a href="index.html" class="font-sans text-sm font-semibold tracking-tight text-void min-w-0 truncate">Darling López Moreno</a>
+      <a href="index.html" class="flex min-w-0 shrink touch-manipulation items-center py-0.5" aria-label="Darling López Moreno — Inicio">
+        <img src="logo.jpeg" alt="Darling López Moreno — Coach" width="360" height="110" class="h-16 w-auto sm:h-20 md:h-[5.25rem] max-w-[min(360px,78vw)] object-contain object-left" decoding="async" />
+      </a>
       <nav class="hidden items-center gap-5 lg:gap-8 md:flex" aria-label="Principal">
         <a class="font-sans text-xs font-medium uppercase tracking-[0.14em] text-mist hover:text-void" href="index.html">Inicio</a>
         <a class="font-sans text-xs font-medium uppercase tracking-[0.14em] text-mist hover:text-void" href="landing-conversion.html">Programa</a>
@@ -79,7 +81,7 @@
 
   <main>
     <!-- 1) Hero de origen / historia -->
-    <section class="border-b border-line bg-cream pt-[calc(6.5rem+env(safe-area-inset-top))] pb-16 sm:pb-24 md:pt-[calc(5.5rem+env(safe-area-inset-top))] lg:py-28" id="historia">
+    <section class="border-b border-line bg-cream pt-[calc(7rem+env(safe-area-inset-top))] pb-16 sm:pb-24 md:pt-[calc(6.25rem+env(safe-area-inset-top))] lg:py-28" id="historia">
       <div class="mx-auto grid max-w-content gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:items-start lg:gap-16 xl:gap-20">
         <div class="order-2 lg:order-1">
           <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-accent">Origen · contexto humano</p>
@@ -111,7 +113,7 @@
         <div class="order-1 lg:order-2 lg:sticky lg:top-28">
           <figure class="overflow-hidden rounded-sm border border-line bg-wash shadow-editorial">
             <div class="aspect-[3/4] w-full sm:aspect-[4/5] lg:aspect-[3/4]">
-              <img src="darling%20%283%29.jpeg" alt="Darling López Moreno" class="h-full w-full object-cover object-top" width="900" height="1200" loading="eager" />
+              <img src="darling%20%283%29.jpeg" alt="Darling López Moreno" class="h-full w-full object-cover object-top [object-position:center_top]" width="900" height="1200" loading="eager" />
             </div>
             <figcaption class="font-sans border-t border-line bg-cream px-5 py-3 text-center text-[11px] uppercase tracking-[0.18em] text-mist">Pie de foto opcional · tono editorial</figcaption>
           </figure>
@@ -184,7 +186,9 @@
       <div class="mx-auto max-w-content px-5 sm:px-8">
         <div class="flex flex-col items-center justify-between gap-10 md:flex-row md:items-start">
           <div class="text-center md:text-left">
-            <a href="index.html" class="font-sans text-base font-semibold text-void hover:underline">Darling López Moreno</a>
+            <a href="index.html" class="inline-block mb-3 hover:opacity-90" aria-label="Darling López Moreno — Inicio">
+              <img src="logo.jpeg" alt="" width="280" height="90" class="h-14 sm:h-16 w-auto max-w-[260px] object-contain object-left mx-auto md:mx-0" decoding="async" />
+            </a>
             <p class="mt-2 font-sans text-xs text-mist">© <span id="y"></span> Darling López Moreno. Todos los derechos reservados.</p>
           </div>
           <nav class="flex flex-wrap justify-center gap-6 font-sans text-xs font-medium uppercase tracking-wider text-mist md:justify-end" aria-label="Legal y sitio">
