@@ -57,19 +57,23 @@
   <!-- 0) Header fijo -->
   <header class="fixed top-0 z-50 w-full border-b border-line/80 bg-paper/90 backdrop-blur-md pt-[env(safe-area-inset-top)]">
     <div class="mx-auto max-w-content px-5 py-4 sm:px-8">
-      <div class="flex items-center justify-between gap-4">
-        <a href="index.html" class="flex min-w-0 shrink touch-manipulation items-center py-0.5" aria-label="Darling López Moreno — Inicio">
-          <img src="logo.jpeg" alt="Darling López Moreno — Coach" width="360" height="110" class="h-16 w-auto sm:h-20 md:h-[5.25rem] max-w-[min(360px,78vw)] object-contain object-left" decoding="async" />
-        </a>
-        <a href="#precio" class="font-sans shrink-0 rounded-full bg-warm px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm transition hover:bg-warm-hover min-h-[44px] inline-flex items-center md:hidden">Reservar</a>
-        <nav class="hidden items-center gap-6 lg:gap-8 md:flex" aria-label="Principal">
+      <div class="relative flex items-center justify-between gap-4">
+        <div class="relative z-10 flex min-w-0 items-center gap-2 sm:gap-3">
+          <a href="index.html" class="flex shrink-0 touch-manipulation items-center py-0.5" aria-label="Darling López Moreno — Inicio">
+            <img src="logo.jpeg" alt="Darling López Moreno — Coach" width="360" height="110" class="h-14 w-auto sm:h-16 md:h-20 md:max-h-[5.25rem] max-w-[min(300px,55vw)] md:max-w-[min(360px,38vw)] object-contain object-left" decoding="async" />
+          </a>
+          <img src="logo%20solo.png" alt="" width="120" height="120" decoding="async" role="presentation" class="hidden h-12 w-auto object-contain md:block lg:h-14" />
+        </div>
+        <img src="logo%20solo.png" alt="" width="120" height="120" decoding="async" role="presentation" class="pointer-events-none absolute left-1/2 top-1/2 h-10 w-auto -translate-x-1/2 -translate-y-1/2 object-contain md:hidden" aria-hidden="true" />
+        <a href="#precio" class="relative z-10 font-sans shrink-0 rounded-full bg-warm px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm transition hover:bg-warm-hover min-h-[44px] inline-flex items-center md:hidden">Reservar</a>
+        <nav class="relative z-10 hidden items-center gap-6 lg:gap-8 md:flex" aria-label="Principal">
           <a class="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-muted hover:text-ink" href="index.html">Inicio</a>
           <a class="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-muted hover:text-ink" href="landing-guia.html">La guía</a>
           <a class="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-muted hover:text-ink" href="#beneficios">Resultados</a>
           <a class="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-muted hover:text-ink" href="#oferta">Qué incluye</a>
           <a class="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-muted hover:text-ink" href="#faq">FAQ</a>
         </nav>
-        <a href="#precio" class="font-sans hidden shrink-0 rounded-full bg-warm px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-sm transition hover:bg-warm-hover min-h-[44px] md:inline-flex items-center">Reservar lugar</a>
+        <a href="#precio" class="relative z-10 font-sans hidden shrink-0 rounded-full bg-warm px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-sm transition hover:bg-warm-hover min-h-[44px] md:inline-flex items-center">Reservar lugar</a>
       </div>
       <nav class="mt-3 -mx-1 flex gap-1 overflow-x-auto pb-0.5 font-sans text-[11px] font-semibold uppercase tracking-[0.12em] text-muted md:hidden" aria-label="Secciones">
         <a class="shrink-0 rounded-full px-3 py-2 hover:bg-sand hover:text-ink" href="index.html">Inicio</a>
