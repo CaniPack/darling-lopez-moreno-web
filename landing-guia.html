@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#2c2a28" />
+  <meta name="description" content="Sobre la guía — historia, enfoque y valores antes de la oferta." />
+  <title>Marca | Quién guía el proceso</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            void: "#2c2a28",
+            mist: "#6b6864",
+            cream: "#faf8f5",
+            wash: "#f0ebe4",
+            line: "#e0d9cf",
+            accent: "#4a6670",
+            "accent-soft": "#6d8a94",
+            night: "#1e1d1b",
+          },
+          fontFamily: {
+            sans: ["Outfit", "system-ui", "sans-serif"],
+            serif: ["Libre Baskerville", "Georgia", "serif"],
+          },
+          maxWidth: {
+            read: "42rem",
+            content: "72rem",
+          },
+          boxShadow: {
+            soft: "0 2px 8px rgba(44, 42, 40, 0.06)",
+            editorial: "0 12px 40px rgba(44, 42, 40, 0.08)",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+    body {
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+  </style>
+</head>
+<body class="bg-cream text-void font-serif antialiased overflow-x-hidden">
+  <!-- 0) Header fijo -->
+  <header class="fixed top-0 z-50 w-full border-b border-line/90 bg-cream/95 backdrop-blur-md pt-[env(safe-area-inset-top)]">
+    <div class="mx-auto flex max-w-content items-center justify-between gap-4 px-5 py-4 sm:px-8">
+      <a href="index.html" class="font-sans text-sm font-semibold tracking-tight text-void min-w-0 truncate">Darling López Moreno</a>
+      <nav class="hidden items-center gap-5 lg:gap-8 md:flex" aria-label="Principal">
+        <a class="font-sans text-xs font-medium uppercase tracking-[0.14em] text-mist hover:text-void" href="index.html">Inicio</a>
+        <a class="font-sans text-xs font-medium uppercase tracking-[0.14em] text-mist hover:text-void" href="landing-conversion.html">Programa</a>
+        <a class="font-sans text-xs font-medium uppercase tracking-[0.14em] text-mist hover:text-void" href="#historia">Historia</a>
+        <a class="font-sans text-xs font-medium uppercase tracking-[0.14em] text-mist hover:text-void" href="#enfoque">Enfoque</a>
+        <a class="font-sans text-xs font-medium uppercase tracking-[0.14em] text-mist hover:text-void" href="#pilares">Pilares</a>
+      </nav>
+      <a href="#invitacion" class="font-sans shrink-0 rounded-full border border-void/15 bg-void px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.1em] text-cream transition hover:bg-night min-h-[44px] inline-flex items-center">Siguiente paso</a>
+    </div>
+    <nav class="flex gap-1 overflow-x-auto px-5 pb-3 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-mist md:hidden" aria-label="Secciones">
+      <a class="shrink-0 rounded-full bg-wash/80 px-3 py-2 text-void" href="index.html">Inicio</a>
+      <a class="shrink-0 rounded-full bg-wash/80 px-3 py-2 text-void" href="landing-conversion.html">Programa</a>
+      <a class="shrink-0 rounded-full bg-wash/80 px-3 py-2 text-void" href="#historia">Historia</a>
+      <a class="shrink-0 rounded-full bg-wash/80 px-3 py-2 text-void" href="#enfoque">Enfoque</a>
+      <a class="shrink-0 rounded-full bg-wash/80 px-3 py-2 text-void" href="#pilares">Pilares</a>
+      <a class="shrink-0 rounded-full bg-wash/80 px-3 py-2 text-void" href="#invitacion">Invitación</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1) Hero de origen / historia -->
+    <section class="border-b border-line bg-cream pt-[calc(6.5rem+env(safe-area-inset-top))] pb-16 sm:pb-24 md:pt-[calc(5.5rem+env(safe-area-inset-top))] lg:py-28" id="historia">
+      <div class="mx-auto grid max-w-content gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:items-start lg:gap-16 xl:gap-20">
+        <div class="order-2 lg:order-1">
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-accent">Origen · contexto humano</p>
+          <h1 class="font-sans mt-5 text-3xl font-bold leading-tight tracking-tight text-void sm:text-4xl lg:text-[2.75rem] lg:leading-[1.12]">
+            Un título que nombra el camino, no el producto
+          </h1>
+          <div class="mt-8 space-y-5 text-base leading-[1.75] text-mist sm:text-lg">
+            <p>
+              Primer párrafo de historia: dónde empezó la tensión real, sin postureo. Aquí la persona entiende <strong class="font-semibold text-void">quién está del otro lado</strong> y por qué no es un avatar genérico.
+            </p>
+            <p>
+              Segundo párrafo: qué probó antes, qué falló, qué aprendió en el cuerpo — no solo en teoría. Esto responde a <em>por qué debería importarme</em> sin listar logros vacíos.
+            </p>
+            <p>
+              Tercer párrafo: el giro. Cómo nació el compromiso de acompañar a otras personas desde ese lugar vivido. Cierra el arco de <em>por qué confiar</em> como coherencia, no como promesa mágica.
+            </p>
+          </div>
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a href="#invitacion" class="font-sans inline-flex min-h-[52px] items-center justify-center rounded-lg bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-wide text-cream transition hover:bg-void">Ver cómo trabajamos</a>
+            <a href="#enfoque" class="font-sans inline-flex min-h-[52px] items-center justify-center text-sm font-semibold text-void underline decoration-accent/35 decoration-2 underline-offset-[6px] hover:decoration-accent">Leer mi enfoque</a>
+          </div>
+          <div class="mt-10 border-t border-line pt-8">
+            <p class="font-sans text-xs font-semibold uppercase tracking-[0.16em] text-accent">Microcredencial</p>
+            <p class="mt-2 max-w-md font-sans text-sm font-medium leading-snug text-void">
+              Ej.: formación en X · Y años en Z · Acompañamiento continuo desde [año]. Una línea verificable que ancla confianza sin inflar.
+            </p>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 lg:sticky lg:top-28">
+          <figure class="overflow-hidden rounded-sm border border-line bg-wash shadow-editorial">
+            <div class="aspect-[3/4] w-full sm:aspect-[4/5] lg:aspect-[3/4]">
+              <img src="darling%20%283%29.jpeg" alt="Darling López Moreno" class="h-full w-full object-cover object-top" width="900" height="1200" loading="eager" />
+            </div>
+            <figcaption class="font-sans border-t border-line bg-cream px-5 py-3 text-center text-[11px] uppercase tracking-[0.18em] text-mist">Pie de foto opcional · tono editorial</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) Autoridad intelectual / enfoque -->
+    <section class="border-b border-line bg-wash py-20 sm:py-24 lg:py-32" id="enfoque">
+      <div class="mx-auto max-w-content px-5 sm:px-8">
+        <div class="mx-auto max-w-read text-center">
+          <h2 class="font-sans text-2xl font-bold tracking-tight text-void sm:text-3xl lg:text-4xl">Cómo pienso el trabajo de transformación</h2>
+          <p class="mt-6 text-left text-base leading-[1.8] text-mist sm:text-lg">
+            Aquí describes influencias honestas: lecturas, maestros, experiencias profesionales o corrientes que <strong class="font-semibold text-void">sí usas</strong> y cómo las integras en un marco propio. No es currículum: es mapa mental.
+          </p>
+        </div>
+        <blockquote class="relative mx-auto mt-14 max-w-read border-l-4 border-accent pl-8 pr-2 sm:pl-10">
+          <p class="font-serif text-xl italic leading-relaxed text-void sm:text-2xl">
+            “Una frase que condensa tu postura intelectual o ética frente al cambio. Insight, no eslogan vacío.”
+          </p>
+        </blockquote>
+        <div class="mx-auto mt-14 grid max-w-3xl gap-6 sm:grid-cols-2">
+          <div class="rounded-xl border border-line bg-cream p-8 shadow-soft">
+            <h3 class="font-sans text-sm font-bold uppercase tracking-[0.14em] text-accent">Concepto clave I</h3>
+            <p class="mt-3 leading-relaxed text-mist">Definición breve: qué significa para ti (ej. presencia, sombra, sistema nervioso) y cómo entra en sesión.</p>
+          </div>
+          <div class="rounded-xl border border-line bg-cream p-8 shadow-soft">
+            <h3 class="font-sans text-sm font-bold uppercase tracking-[0.14em] text-accent">Concepto clave II</h3>
+            <p class="mt-3 leading-relaxed text-mist">Segundo pilar conceptual del marco: límites, verdad subjetiva, integración — lo que te diferencia de recetas genéricas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) Valores / pilares (no beneficios al cliente) -->
+    <section class="border-b border-line bg-cream py-20 sm:py-24 lg:py-32" id="pilares">
+      <div class="mx-auto max-w-content px-5 sm:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="font-sans text-2xl font-bold tracking-tight text-void sm:text-3xl lg:text-4xl">En qué creo cuando acompaño</h2>
+          <p class="mt-4 text-mist">Principios de trabajo, no promesas de resultado. Esto filtra a la persona adecuada antes de la oferta.</p>
+        </div>
+        <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <article class="flex flex-col rounded-xl border border-line bg-wash/60 p-8 shadow-soft">
+            <h3 class="font-sans text-lg font-bold text-void">Verdad antes que comodidad</h3>
+            <p class="mt-4 flex-1 leading-relaxed text-mist">Creencia operativa: prefiero el roce honesto al aplauso fácil. Así se construye confianza a largo plazo.</p>
+          </article>
+          <article class="flex flex-col rounded-xl border border-line bg-wash/60 p-8 shadow-soft">
+            <h3 class="font-sans text-lg font-bold text-void">Cuerpo y contexto importan</h3>
+            <p class="mt-4 flex-1 leading-relaxed text-mist">Cómo entiendes la transformación: no descontextualizada del trabajo, la familia ni la historia personal.</p>
+          </article>
+          <article class="flex flex-col rounded-xl border border-line bg-wash/60 p-8 shadow-soft">
+            <h3 class="font-sans text-lg font-bold text-void">Autonomía como meta</h3>
+            <p class="mt-4 flex-1 leading-relaxed text-mist">El acompañamiento apunta a que dejes de necesitar la sesión para decidir. Dependencia no es éxito.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) CTA final simple (sin precio ni FAQ) -->
+    <section class="bg-night py-20 text-cream sm:py-24 lg:py-28" id="invitacion">
+      <div class="mx-auto max-w-content px-5 text-center sm:px-8">
+        <h2 class="font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Cuando estés lista, el siguiente paso es conversar</h2>
+        <p class="mx-auto mt-6 max-w-lg font-serif text-lg leading-relaxed text-cream/75">Una frase corta que invita sin presionar: aplicar, agendar, o leer la propuesta del programa en otra página.</p>
+        <a href="landing-conversion.html#precio" class="font-sans mt-10 inline-flex min-h-[56px] items-center justify-center rounded-full bg-cream px-10 py-4 text-sm font-bold uppercase tracking-wide text-night transition hover:bg-wash">Ver programa e inversión</a>
+      </div>
+    </section>
+
+    <!-- 5) Footer institucional -->
+    <footer class="border-t border-line bg-cream pb-[calc(2rem+env(safe-area-inset-bottom))] pt-14">
+      <div class="mx-auto max-w-content px-5 sm:px-8">
+        <div class="flex flex-col items-center justify-between gap-10 md:flex-row md:items-start">
+          <div class="text-center md:text-left">
+            <a href="index.html" class="font-sans text-base font-semibold text-void hover:underline">Darling López Moreno</a>
+            <p class="mt-2 font-sans text-xs text-mist">© <span id="y"></span> Darling López Moreno. Todos los derechos reservados.</p>
+          </div>
+          <nav class="flex flex-wrap justify-center gap-6 font-sans text-xs font-medium uppercase tracking-wider text-mist md:justify-end" aria-label="Legal y sitio">
+            <a class="min-h-[44px] inline-flex items-center hover:text-void" href="index.html">Inicio</a>
+            <a class="min-h-[44px] inline-flex items-center hover:text-void" href="landing-conversion.html">Programa</a>
+            <a class="min-h-[44px] inline-flex items-center hover:text-void" href="#">Privacidad</a>
+            <a class="min-h-[44px] inline-flex items-center hover:text-void" href="#">Términos</a>
+            <a class="min-h-[44px] inline-flex items-center hover:text-void" href="#">Cookies</a>
+          </nav>
+          <div class="flex items-center justify-center gap-4 md:justify-end" aria-label="Redes sociales">
+            <a href="#" class="text-mist transition hover:text-void" aria-label="Instagram">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="text-mist transition hover:text-void" aria-label="LinkedIn">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="text-mist transition hover:text-void" aria-label="YouTube">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

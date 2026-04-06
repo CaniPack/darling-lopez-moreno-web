@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1a18" />
+  <meta name="description" content="Programa de acompañamiento — estructura de landing orientada a conversión." />
+  <title>Programa | Landing conversión</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#1a1a18",
+            muted: "#5c5a57",
+            paper: "#faf9f7",
+            line: "#e8e6e1",
+            warm: "#c45c26",
+            "warm-hover": "#a84d1f",
+            sand: "#f3f1ec",
+            deep: "#141413",
+          },
+          fontFamily: {
+            sans: ["DM Sans", "system-ui", "sans-serif"],
+            serif: ["Source Serif 4", "Georgia", "serif"],
+          },
+          maxWidth: {
+            content: "72rem",
+            narrow: "40rem",
+          },
+          boxShadow: {
+            card: "0 1px 2px rgba(26, 26, 24, 0.04), 0 8px 24px rgba(26, 26, 24, 0.06)",
+            lift: "0 4px 20px rgba(26, 26, 24, 0.08)",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+    body {
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+  </style>
+</head>
+<body class="bg-paper text-ink font-serif antialiased overflow-x-hidden">
+  <!-- 0) Header fijo -->
+  <header class="fixed top-0 z-50 w-full border-b border-line/80 bg-paper/90 backdrop-blur-md pt-[env(safe-area-inset-top)]">
+    <div class="mx-auto max-w-content px-5 py-4 sm:px-8">
+      <div class="flex items-center justify-between gap-4">
+        <a href="index.html" class="font-sans min-w-0 truncate text-sm font-bold tracking-tight text-ink">Darling López Moreno</a>
+        <a href="#precio" class="font-sans shrink-0 rounded-full bg-warm px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-white shadow-sm transition hover:bg-warm-hover min-h-[44px] inline-flex items-center md:hidden">Reservar</a>
+        <nav class="hidden items-center gap-6 lg:gap-8 md:flex" aria-label="Principal">
+          <a class="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-muted hover:text-ink" href="index.html">Inicio</a>
+          <a class="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-muted hover:text-ink" href="landing-guia.html">La guía</a>
+          <a class="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-muted hover:text-ink" href="#beneficios">Resultados</a>
+          <a class="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-muted hover:text-ink" href="#oferta">Qué incluye</a>
+          <a class="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-muted hover:text-ink" href="#faq">FAQ</a>
+        </nav>
+        <a href="#precio" class="font-sans hidden shrink-0 rounded-full bg-warm px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-sm transition hover:bg-warm-hover min-h-[44px] md:inline-flex items-center">Reservar lugar</a>
+      </div>
+      <nav class="mt-3 -mx-1 flex gap-1 overflow-x-auto pb-0.5 font-sans text-[11px] font-semibold uppercase tracking-[0.12em] text-muted md:hidden" aria-label="Secciones">
+        <a class="shrink-0 rounded-full px-3 py-2 hover:bg-sand hover:text-ink" href="index.html">Inicio</a>
+        <a class="shrink-0 rounded-full px-3 py-2 hover:bg-sand hover:text-ink" href="landing-guia.html">La guía</a>
+        <a class="shrink-0 rounded-full px-3 py-2 hover:bg-sand hover:text-ink" href="#beneficios">Resultados</a>
+        <a class="shrink-0 rounded-full px-3 py-2 hover:bg-sand hover:text-ink" href="#oferta">Qué incluye</a>
+        <a class="shrink-0 rounded-full px-3 py-2 hover:bg-sand hover:text-ink" href="#faq">FAQ</a>
+        <a class="shrink-0 rounded-full px-3 py-2 hover:bg-sand hover:text-ink" href="#precio">Precio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1) Hero — dos columnas -->
+    <section class="border-b border-line bg-paper pt-[calc(5rem+env(safe-area-inset-top))] pb-16 sm:pb-24 lg:py-32 lg:pb-28">
+      <div class="mx-auto grid max-w-content gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-16">
+        <div class="order-2 lg:order-1">
+          <p class="font-sans text-[11px] font-bold uppercase tracking-[0.2em] text-warm">Etiqueta — qué es esto</p>
+          <h1 class="font-sans mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem] xl:text-6xl">
+            Un título que deja claro el resultado principal
+          </h1>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
+            Subtítulo para quién es: una línea que nombra al lector ideal y la promesa sin rodeos. Aquí respondes <em>para quién</em> y <em>por qué ahora</em>.
+          </p>
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a href="#precio" class="font-sans inline-flex min-h-[52px] items-center justify-center rounded-lg bg-warm px-8 py-4 text-center text-sm font-bold uppercase tracking-wide text-white shadow-lift transition hover:bg-warm-hover">Quiero el siguiente paso</a>
+            <a href="#oferta" class="font-sans inline-flex min-h-[52px] items-center justify-center text-sm font-semibold text-ink underline decoration-warm/40 decoration-2 underline-offset-4 hover:decoration-warm">Ver qué incluye</a>
+          </div>
+          <div class="mt-10 flex flex-wrap items-center gap-4 border-t border-line pt-8">
+            <div class="flex -space-x-2" aria-hidden="true">
+              <span class="inline-block h-10 w-10 rounded-full border-2 border-paper bg-line"></span>
+              <span class="inline-block h-10 w-10 rounded-full border-2 border-paper bg-muted/30"></span>
+              <span class="inline-block h-10 w-10 rounded-full border-2 border-paper bg-line"></span>
+            </div>
+            <p class="font-sans max-w-xs text-sm font-medium leading-snug text-muted">
+              <span class="text-ink">+120 personas</span> ya aplicaron este enfoque en los últimos meses.
+            </p>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="overflow-hidden rounded-2xl border border-line bg-sand shadow-card">
+            <div class="aspect-[4/5] w-full bg-gradient-to-br from-line to-sand sm:aspect-[5/6] lg:aspect-square xl:aspect-[5/6]">
+              <!-- Imagen principal: sustituye por tu foto o asset -->
+              <img src="darling%20%284%29.jpeg" alt="Darling López Moreno" class="h-full w-full object-cover object-top" width="800" height="1000" loading="eager" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) Beneficios / resultados — tres cards -->
+    <section class="border-b border-line bg-sand py-20 sm:py-24 lg:py-32" id="beneficios">
+      <div class="mx-auto max-w-content px-5 sm:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="font-sans text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-5xl">Lo que ganas al terminar</h2>
+          <p class="mt-4 text-lg text-muted">No el proceso: el estado en el que quedas. Tres resultados concretos.</p>
+        </div>
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          <article class="rounded-2xl border border-line bg-paper p-8 shadow-card transition hover:shadow-lift">
+            <h3 class="font-sans text-xl font-bold text-ink">Claridad sobre tu siguiente movimiento</h3>
+            <p class="mt-3 leading-relaxed text-muted">Dejas de improvisar. Sabes qué priorizar cada semana sin culpa ni ruido externo.</p>
+          </article>
+          <article class="rounded-2xl border border-line bg-paper p-8 shadow-card transition hover:shadow-lift">
+            <h3 class="font-sans text-xl font-bold text-ink">Energía que no depende del “ánimo”</h3>
+            <p class="mt-3 leading-relaxed text-muted">Menos picos y caídas. Más sostenimiento desde hábitos y límites que sí puedes cumplir.</p>
+          </article>
+          <article class="rounded-2xl border border-line bg-paper p-8 shadow-card transition hover:shadow-lift sm:col-span-2 lg:col-span-1">
+            <h3 class="font-sans text-xl font-bold text-ink">Un lenguaje para defender tu tiempo</h3>
+            <p class="mt-3 leading-relaxed text-muted">Frases y criterios listos para decir no, renegociar y proteger lo que importa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) Desglose de oferta / metodología — stack numerado -->
+    <section class="border-b border-line bg-paper py-20 sm:py-24 lg:py-32" id="oferta">
+      <div class="mx-auto max-w-content px-5 sm:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="font-sans text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-5xl">Qué incluye exactamente</h2>
+          <p class="mt-4 text-lg text-muted">Pasos numerados con entregables. Aquí va la claridad, no el deseo.</p>
+        </div>
+        <ol class="mx-auto mt-16 max-w-3xl space-y-10">
+          <li class="rounded-2xl border border-line bg-sand/50 p-8 shadow-sm sm:p-10">
+            <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+              <div class="flex gap-5">
+                <span class="font-sans flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-ink text-lg font-bold text-paper">1</span>
+                <div>
+                  <h3 class="font-sans text-xl font-bold text-ink sm:text-2xl">Fase — Diagnóstico guiado</h3>
+                  <p class="mt-2 leading-relaxed text-muted">Breve explicación de qué hace esta fase y en qué formato llega (llamadas, documentos, etc.).</p>
+                  <ul class="mt-4 list-inside list-disc space-y-2 text-muted marker:text-warm">
+                    <li>Mapa de bloqueos y prioridades</li>
+                    <li>Plantilla de decisión semanal</li>
+                    <li>Acceso al espacio de trabajo</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="font-sans shrink-0 text-right text-sm font-bold uppercase tracking-wider text-warm sm:pt-1">Valor ref. $400</p>
+            </div>
+          </li>
+          <li class="rounded-2xl border border-line bg-sand/50 p-8 shadow-sm sm:p-10">
+            <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+              <div class="flex gap-5">
+                <span class="font-sans flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-ink text-lg font-bold text-paper">2</span>
+                <div>
+                  <h3 class="font-sans text-xl font-bold text-ink sm:text-2xl">Fase — Implementación acompañada</h3>
+                  <p class="mt-2 leading-relaxed text-muted">Qué pasa en la práctica: ritmo, revisiones y entregables medibles.</p>
+                  <ul class="mt-4 list-inside list-disc space-y-2 text-muted marker:text-warm">
+                    <li>Sesiones 1 a 1 con agenda clara</li>
+                    <li>Feedback escrito entre sesiones</li>
+                    <li>Ajustes según tu contexto real</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="font-sans shrink-0 text-right text-sm font-bold uppercase tracking-wider text-warm sm:pt-1">Incluido en programa</p>
+            </div>
+          </li>
+          <li class="rounded-2xl border border-line bg-sand/50 p-8 shadow-sm sm:p-10">
+            <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+              <div class="flex gap-5">
+                <span class="font-sans flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-ink text-lg font-bold text-paper">3</span>
+                <div>
+                  <h3 class="font-sans text-xl font-bold text-ink sm:text-2xl">Fase — Cierre y autonomía</h3>
+                  <p class="mt-2 leading-relaxed text-muted">Cómo sales del contenedor sin perder lo aprendido: ritual de cierre y recursos.</p>
+                  <ul class="mt-4 list-inside list-disc space-y-2 text-muted marker:text-warm">
+                    <li>Plan de 90 días posterior</li>
+                    <li>Biblioteca de recursos grabados</li>
+                    <li>Checklist de mantenimiento</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="font-sans shrink-0 text-right text-sm font-bold uppercase tracking-wider text-warm sm:pt-1">Valor ref. $350</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4) Precio / inversión / CTA fuerte -->
+    <section class="relative border-b border-line bg-deep py-24 text-paper sm:py-28 lg:py-32" id="precio">
+      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(196,92,38,0.25),transparent)]" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-content px-5 sm:px-8">
+        <div class="mx-auto max-w-2xl rounded-3xl border border-white/10 bg-ink/40 p-10 shadow-lift backdrop-blur-sm sm:p-14">
+          <p class="font-sans text-center text-xs font-bold uppercase tracking-[0.2em] text-warm">Inversión</p>
+          <h2 class="font-sans mt-4 text-center text-3xl font-bold leading-tight sm:text-4xl">Todo el stack, un solo compromiso</h2>
+          <p class="mx-auto mt-4 max-w-lg text-center leading-relaxed text-paper/75">
+            Resumen del valor: las tres fases, el acompañamiento y los entregables listados arriba — pensado para quien ya probó parches y quiere sistema.
+          </p>
+          <div class="mt-10 text-center">
+            <p class="font-sans text-sm uppercase tracking-widest text-paper/50 line-through">Antes $1.800</p>
+            <p class="font-sans mt-2 text-5xl font-bold tracking-tight sm:text-6xl">$997</p>
+            <p class="mt-2 text-sm text-paper/60">o 3 pagos de $349 · Cupos limitados por cohorte</p>
+          </div>
+          <div class="mt-10 flex flex-col items-center gap-4">
+            <a href="#footer-form" class="font-sans inline-flex min-h-[56px] w-full max-w-md items-center justify-center rounded-xl bg-warm px-10 py-4 text-center text-base font-bold uppercase tracking-wide text-white transition hover:bg-warm-hover sm:text-lg">Quiero asegurar mi lugar</a>
+            <p class="text-center text-sm text-paper/55">Garantía de claridad: si no encaja, lo hablamos en la primera semana.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5) Manifiesto / autoridad — corto y visual -->
+    <section class="relative overflow-hidden border-b border-line bg-sand py-20 sm:py-28 lg:py-32">
+      <div class="absolute inset-y-0 right-0 hidden w-1/3 bg-gradient-to-l from-warm/10 to-transparent lg:block" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-content px-5 sm:px-8">
+        <blockquote class="mx-auto max-w-narrow text-center">
+          <p class="font-serif text-2xl italic leading-snug text-ink sm:text-3xl lg:text-[2rem] lg:leading-tight">
+            “No se trata de hacer más. Se trata de dejar de actuar como si tu vida fuera un apéndice del calendario de otros.”
+          </p>
+          <footer class="font-sans mt-8 text-xs font-bold uppercase tracking-[0.2em] text-muted">Manifiesto — postura, no argumento</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 6) FAQ -->
+    <section class="border-b border-line bg-paper py-20 sm:py-24 lg:py-32" id="faq">
+      <div class="mx-auto max-w-content px-5 sm:px-8">
+        <h2 class="font-sans text-center text-3xl font-bold tracking-tight text-ink sm:text-4xl">Preguntas frecuentes</h2>
+        <p class="mx-auto mt-4 max-w-lg text-center text-muted">Objeciones cuando ya viste la oferta y el precio.</p>
+        <div class="mx-auto mt-12 max-w-2xl space-y-3">
+          <details class="group rounded-xl border border-line bg-sand/40 px-6 py-2 shadow-sm open:bg-paper open:shadow-card">
+            <summary class="font-sans cursor-pointer list-none py-4 text-base font-semibold text-ink marker:content-none [&::-webkit-details-marker]:hidden">
+              <span class="flex items-center justify-between gap-4">
+                ¿Necesito experiencia previa?
+                <span class="text-warm transition group-open:rotate-45">+</span>
+              </span>
+            </summary>
+            <p class="border-t border-line/80 pb-5 pt-2 leading-relaxed text-muted">No. El programa arranca desde tu situación actual. Lo que sí pide es disposición a ejecutar entre sesiones.</p>
+          </details>
+          <details class="group rounded-xl border border-line bg-sand/40 px-6 py-2 shadow-sm open:bg-paper open:shadow-card">
+            <summary class="font-sans cursor-pointer list-none py-4 text-base font-semibold text-ink marker:content-none [&::-webkit-details-marker]:hidden">
+              <span class="flex items-center justify-between gap-4">
+                ¿Cuánto tiempo me lleva por semana?
+                <span class="text-warm transition group-open:rotate-45">+</span>
+              </span>
+            </summary>
+            <p class="border-t border-line/80 pb-5 pt-2 leading-relaxed text-muted">Entre 3 y 5 horas, según fase. Lo acordamos en el diagnóstico para que encaje con tu calendario real.</p>
+          </details>
+          <details class="group rounded-xl border border-line bg-sand/40 px-6 py-2 shadow-sm open:bg-paper open:shadow-card">
+            <summary class="font-sans cursor-pointer list-none py-4 text-base font-semibold text-ink marker:content-none [&::-webkit-details-marker]:hidden">
+              <span class="flex items-center justify-between gap-4">
+                ¿Hay devolución?
+                <span class="text-warm transition group-open:rotate-45">+</span>
+              </span>
+            </summary>
+            <p class="border-t border-line/80 pb-5 pt-2 leading-relaxed text-muted">Política clara: ventana de X días o conversación de encaje en la primera semana — ajusta según tu modelo legal.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7) Footer -->
+    <footer class="bg-paper pb-[calc(2rem+env(safe-area-inset-bottom))] pt-16" id="footer-form">
+      <div class="mx-auto max-w-content px-5 sm:px-8">
+        <div class="flex flex-col items-start justify-between gap-10 border-t border-line pt-12 md:flex-row md:items-center">
+          <div>
+            <a href="index.html" class="font-sans text-lg font-bold text-ink hover:underline">Darling López Moreno</a>
+            <p class="mt-1 max-w-xs text-sm text-muted">Frase corta de cierre. Sin venta: solo identidad.</p>
+            <p class="mt-3 flex flex-wrap gap-x-4 gap-y-1 font-sans text-xs text-muted">
+              <a class="hover:text-ink underline-offset-2 hover:underline" href="index.html">Inicio</a>
+              <a class="hover:text-ink underline-offset-2 hover:underline" href="landing-guia.html">La guía</a>
+            </p>
+          </div>
+          <nav class="flex flex-wrap gap-x-8 gap-y-3 font-sans text-xs font-semibold uppercase tracking-wider text-muted" aria-label="Legal">
+            <a class="hover:text-ink min-h-[44px] inline-flex items-center" href="#">Privacidad</a>
+            <a class="hover:text-ink min-h-[44px] inline-flex items-center" href="#">Términos</a>
+            <a class="hover:text-ink min-h-[44px] inline-flex items-center" href="#">Aviso legal</a>
+            <a class="hover:text-ink min-h-[44px] inline-flex items-center" href="mailto:hola@ejemplo.com">Contacto</a>
+          </nav>
+        </div>
+        <p class="mt-10 text-center text-xs text-muted/80 md:text-left">© <span id="y"></span> Darling López Moreno. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </main>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
